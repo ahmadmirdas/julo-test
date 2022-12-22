@@ -1,0 +1,16 @@
+environment: dev
+
+postgres:
+  database: julotest
+  username: postgres
+  password: postgres
+  host: julo-test-pg
+  port: "5432"
+  max_conn: 10
+  min_idle_conn: 5
+  max_retries: 2
+
+jwt:
+  issuer: wallet JWT App
+  exp: 1 # hour
+  sign_key: secret wallet julo
